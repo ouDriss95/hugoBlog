@@ -1,0 +1,11 @@
+<div class="portfolio__card">
+  <a href="{{ .Permalink | safeURL }}">
+    {{ if .Params.image }}
+    <div class="portfolio__img">
+      <img src="{{.Params.image | absURL }}" alt="{{ .Params.title }}"/>
+    </div>
+    {{ end }}
+    <div class="my-2 text-xl font-semibold">{{ .Params.title }}</div>
+    <!-- <div class="">{{ .Params.description }}</div> -->
+  </a>
+</div>

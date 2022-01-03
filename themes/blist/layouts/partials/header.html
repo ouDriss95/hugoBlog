@@ -1,0 +1,121 @@
+<style>
+.dayNight div {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  box-shadow: inset 10px 4px 0 0 #5C6DA9;
+  transform: scale(1) rotate(-65deg);
+  transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s, opacity 0.08s ease 0.06s;
+  opacity: .5;
+}
+.toggle-dark-mode:hover .dayNight div {
+  opacity: 1;
+}
+.dayNight div:before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background 0.3s ease;
+}
+.dayNight div:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: -2px 0 0 -2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 -18px 0 #fff, 0 18px 0 #fff, 18px 0 0 #fff, -18px 0 0 #fff, 10px 10px 0 #fff, -10px 10px 0 #fff, 10px -10px 0 #fff, -10px -10px 0 #fff;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+.dayNight div.checked {
+  box-shadow: inset 32px -32px 0 0 #000;
+  transform: scale(0.5) rotate(0deg);
+  transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s, opacity 0.08s ease 0.06s;
+}
+.dayNight div.checked:before {
+  background: #fff;
+  transition: background 0.3s ease 0.1s;
+}
+.dayNight div.checked:after {
+  transform: scale(1.5);
+  transition: transform 0.5s ease 0.15s;
+}
+</style>
+
+<header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <a href="{{ .Site.Home.Permalink }}" class="capitalize font-extrabold text-2xl">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="29.82" height="45" viewBox="0 0 18.608 35.63"><g id="Group_1" data-name="Group 1" transform="translate(-641.977 -275.336)"><rect id="Rectangle_1" data-name="Rectangle 1" width="35.628" height="2" transform="translate(641.977 310.964) rotate(-89.88)" fill="#354270"></rect><rect id="Rectangle_2" data-name="Rectangle 2" width="8.6" height="8.6" rx="4.3" transform="translate(655.728 294.57)" fill="#a3a3a2"></rect><path id="Path_13" data-name="Path 13" d="M141.71,24.946a6.821,6.821,0,0,1,12.276-4.1,13.189,13.189,0,0,0,.109-1.7h0A13.99,13.99,0,0,0,140.1,5.16H136.72V33.147H140.1a13.953,13.953,0,0,0,6.537-1.634A6.842,6.842,0,0,1,141.71,24.946Z" transform="translate(511.491 273.924)" fill="#354270"></path></g></svg> -->
+
+    <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" width="29.82" height="45" viewBox="0 0 23.608 35.63"><g data-name="Group 1" transform="translate(-641.977 -275.336)"><path data-name="Rectangle 1" d="m641.977 310.964.075-35.628 2 .004-.075 35.628z"/><rect data-name="Rectangle 2" width="8.6" height="8.6" rx="4.3" transform="translate(655.728 294.57)" fill="#a3a3a2"/><path data-name="Path 13" d="M653.201 298.87a6.821 6.821 0 0 1 12.276-4.1 13.189 13.189 0 0 0 .109-1.7 13.99 13.99 0 0 0-13.995-13.986h-3.38v27.987h3.38a13.953 13.953 0 0 0 6.537-1.634 6.842 6.842 0 0 1-4.927-6.567Z"/></g></svg>
+  </a>
+
+  <ul class="flex items-center gap-4 lg:gap-6">
+    {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+    {{ end }}
+
+    {{ if .Site.IsMultiLingual }}
+    {{ if ge (len .Site.Languages) 3 }}
+    <li class="relative cursor-pointer">
+      <span class="language-switcher flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3.6" y1="9" x2="20.4" y2="9" />
+          <line x1="3.6" y1="15" x2="20.4" y2="15" />
+          <path d="M11.5 3a17 17 0 0 0 0 18" />
+          <path d="M12.5 3a17 17 0 0 1 0 18" />
+        </svg>
+        <a>{{ i18n "languageSwitcherLabel" }}</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
+        </svg>
+      </span>
+      <div
+        class="language-dropdown absolute top-full mt-2 left-0 flex-col gap-2 bg-gray-100 dark:bg-gray-900 dark:text-white z-10 hidden">
+        {{ range .Site.Languages }}
+        {{ if not (eq .Lang $.Site.Language.Lang) }}
+        <a class="px-3 py-2 hover:bg-gray-200 dark:hover:bg-gray-700" href="/{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </li>
+    {{ else }}
+    
+    {{ end }}
+    {{ end }}
+
+    {{ if .Site.Params.enableSearch }}
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    {{ end }}
+
+    {{ if .Site.Params.darkModeToggle }}
+    <li class="cursor-pointer toggle-dark-mode grid place-items-center">
+      <span class="inline-block dayNight">
+        <div class="dayNight__icon"></div>
+      </span>
+    </li>
+    {{ end }}
+  </ul>
+</header>
