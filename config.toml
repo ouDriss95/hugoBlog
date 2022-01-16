@@ -21,16 +21,11 @@ DefaultContentLanguageInSubdir = true
         name = "Blog"
         url = "blog"
         weight = 1
-
-    [[languages.en.menu.main]]
-        name = "About"
-        url = "page/about/"
-        weight = 2
         
     [[languages.en.menu.main]]
         name = "Contact"
         url = "contact"
-        weight = 3
+        weight = 2
 
 [params]
   description = "Doudmine - Develop functional user interfaces and provide a valuable experience to Shopify store owners"
