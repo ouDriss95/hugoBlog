@@ -1,4 +1,4 @@
-baseurl = "https://doudmine.com"
+baseurl = "https://www.doudmine.com"
 metaDataFormat = "yaml"
 title = "Doudmine"
 theme = "blist"
