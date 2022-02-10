@@ -70,7 +70,9 @@ DefaultContentLanguageInSubdir = true
 # syntax highlight settings
 [markup]
   [markup.highlight]
-    style = "dracula"
+    codeFences = true
+    style = 'monokai'
+    tabWidth = 4
   [markup.goldmark.renderer]
     # Enable to include inline HTML
     unsafe = true
