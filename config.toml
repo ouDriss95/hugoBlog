@@ -70,9 +70,7 @@ DefaultContentLanguageInSubdir = true
 # syntax highlight
 [markup]
   [markup.highlight]
-    codeFences = true
     style = 'monokai'
-    tabWidth = 4
   [markup.goldmark.renderer]
     # Enable to include inline HTML
     unsafe = true
