@@ -31,7 +31,7 @@ with the one is highlighted below. That highlighted code is between line 25-26 i
 {% endif %}
 ```
 
-**6.** Next, On the same folder which is _Sections_. Find a file called "blog-template.liquid"
+6. Next, On the same folder which is _Sections_. Find a file called "blog-template.liquid"
 
 **7.** Inside the "blog-template.liquid" file replace the following code
 
