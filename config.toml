@@ -67,7 +67,7 @@ DefaultContentLanguageInSubdir = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-# syntax highlight settings
+# syntax highlight
 [markup]
   [markup.highlight]
     codeFences = true
