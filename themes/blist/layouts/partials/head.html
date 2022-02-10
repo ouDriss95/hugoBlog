@@ -18,17 +18,27 @@
   <meta name="author" content="{{ .Params.Author}}" />
   {{ end -}} 
   
-  {{ hugo.Generator }} {{- $styles := resources.Get "css/styles.css"
-  | postCSS (dict "config" "./assets/css/postcss.config.js") -}} {{- if
-  .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-  {{ else }} {{- $styles := $styles| minify | fingerprint |
-  resources.PostProcess -}}
-  <link
-    rel="stylesheet"
-    href="{{ $styles.Permalink }}"
-    integrity="{{ $styles.Data.Integrity }}"
-  />
+  {{ hugo.Generator }} 
+  
+  {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}} 
+  {{- $clipboard := resources.Get "css/clipboard.css" -}}
+
+  {{- if .Site.IsServer }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+    <link rel="stylesheet" href="{{ $clipboard.RelPermalink}}">
+  {{ else }} 
+    {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
+      <link
+        rel="stylesheet"
+        href="{{ $styles.Permalink }}"
+        integrity="{{ $styles.Data.Integrity }}"
+      />
+    {{- $clipboard := $clipboard| minify | fingerprint | resources.PostProcess -}}
+      <link
+        rel="stylesheet"
+        href="{{ $clipboard.Permalink }}"
+        integrity="{{ $clipboard.Data.Integrity }}"
+      />
   {{ end -}}
 
   <!-- Katex support -->
