@@ -13,7 +13,7 @@ In this tutorial article we will be adding a parallax section with fixed scrolli
 3. Find the theme that called _Copy of Minimal_ then click **Actions** > **Edit Code**.
 4. On the left bar, search for a folder called _Assets_ then add the following code inside the "theme.scss.liquid" file
 
-```css
+```css {linenos=table}
 // Parallax Featured Product Style
 .featured {
   position: relative !important;
@@ -140,7 +140,7 @@ In this tutorial article we will be adding a parallax section with fixed scrolli
 
 **6.** Copy and paste the following code inside the "parallax-featured-product.liquid" file
 
-```js
+```js {linenos=table}
  {% comment %}
    custom
    code by

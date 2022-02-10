@@ -17,7 +17,7 @@ to your store! Let me show you how
 5. Create a snippet with a name of "accordion-description".
 6. Copy the following code and paste it in the file that you just created which is "accordion-description"
 
-```
+```html {linenos=table}
 <style>
    .accordian {
       max-width: 600px;
@@ -187,7 +187,7 @@ third file starting from the bottom!
 
 **8.** Replace the following code
 
-```
+```html {linenos=table}
 <div class="product-description rte" itemprop="description">
    {% include 'accordion-description' %}
 </div>
@@ -195,7 +195,7 @@ third file starting from the bottom!
 
 with the one that is highlighted below. That highlighted code is between line 221-246 in your Code Editor
 
-```js {13-40}
+```js {linenos=table,hl_lines=["3-40"],linenostart=1}
 <div class="product-single__quantity{% unless section.settings.product_quantity_enable %} is-hidden{% endunless %}">
    <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
    <input type="number" id="Quantity" name="quantity" value="1" min="1" class="quantity-selector">

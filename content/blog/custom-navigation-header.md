@@ -15,13 +15,13 @@ Also I encourage you to watch the whole video on YouTube, so you can use this cu
 3. Find the theme that called _Copy of Minimal_ then click **Actions** > **Edit Code**.
 4. On the left bar, search for a folder called _Layout_ then Copy and paste the following code inside the file 'theme.liquid' on the line 86.
 
-```js
+```js {linenos=table}
 {% include 'announcement' %}
 ```
 
 **6.** Again, on the left bar search for a folder called _Sinppets_ then create a new file called "announcement.liquid" then copy & paste the following code inside it
 
-```js
+```js {linenos=table}
 {% if settings.show_announcement %}
    {% if settings.home_page_only == false or request.page_type == 'index' %}
       <style>
@@ -64,7 +64,7 @@ Also I encourage you to watch the whole video on YouTube, so you can use this cu
 
 **8.** Inside the file 'settings_schema.json' add the following code at the bottom (Before the closing Bracket)
 
-```js
+```js {linenos=table}
 ,{
   "name": "Advanced settings",
   "settings" : [
@@ -113,7 +113,7 @@ Also I encourage you to watch the whole video on YouTube, so you can use this cu
 
 **9.** Finally, copy & paste the following code inside the file called "header" in the Sections folder after you delete what's in it
 
-```js
+```js {linenos=table}
 <style>
   .myheader-section {
     position: sticky;

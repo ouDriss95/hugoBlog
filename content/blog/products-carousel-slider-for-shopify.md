@@ -14,7 +14,7 @@ Product Sliders allows showing all suggested products friendly that match to cus
 4. On the left bar, search for a folder called _Assets_ then create a new file called 'slick.min.js'.
 5. Copy and paste the following code inside the file 'slick.min.js' then Save
 
-```js
+```js {linenos=table}
 /*!
 Slick.js
 Version: 1.8.0
@@ -1980,7 +1980,7 @@ Issues: http://github.com/kenwheeler/slick/issues
 
 **7.** Copy and paste the following code again inside the file 'slick.css.liquid'
 
-```css
+```css {linenos=table}
 /*!
 Slick.css
 Version: 1.8.0
@@ -2082,7 +2082,7 @@ Issues: http://github.com/kenwheeler/slick/issues
 **8.** Again on the same folder _Assets_. Create another file called 'slick-theme.css.liquid'
 **9.** Copy and paste the following code inside the file
 
-```css
+```css {linenos=table}
 /*!
 Slick-theme.css
 Version: 1.8.0
@@ -2247,14 +2247,14 @@ Issues: http://github.com/kenwheeler/slick/issues
 
 **11.** Copy and paste the following code inside the 'theme.liquid' file on the line 33 in your code editor
 
-```
+```js {linenos=table}
 {{ 'slick.css' | asset_url | stylesheet_tag }}
 {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
 ```
 
 **12.** Copy and paste again the following code in the same file on the line 74 in your code editor
 
-```
+```js {linenos=table}
 {{ 'slick.min.js' | asset_url | script_tag }}
 ```
 
@@ -2262,7 +2262,7 @@ Issues: http://github.com/kenwheeler/slick/issues
 
 **14.** After you create the new file, Delete all what inside it then copy and paste the following code and hit save
 
-```
+```html {linenos=table}
 <style>
    .box {
       width: {{ section.settings.card-width}}px;

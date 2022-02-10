@@ -13,7 +13,7 @@ Product Sliders allows showing all suggested products friendly that match to cus
 3. Find the theme that called _Copy of Debut_ then click **Actions** > **Edit Code**.
 4. On the left bar, search for a folder called _Assets_ then Copy and paste the following code inside the file 'theme.js' then Save.
 
-```js
+```js {linenos=table}
 /*!
 Slick.js
 Version: 1.8.0
@@ -7556,7 +7556,7 @@ Issues: http://github.com/kenwheeler/slick/issues
 
 **6.** Copy and paste the following code again inside the file 'slick.css.liquid'
 
-```css
+```css {linenos=table}
 /*!
 Slick.css
 Version: 1.8.0
@@ -7658,7 +7658,7 @@ Issues: http://github.com/kenwheeler/slick/issues
 **7.** Again on the same folder _Assets_. Create another file called 'slick-theme.css.liquid'
 **8.** Copy and paste the following code inside the file
 
-```css
+```css {linenos=table}
 /*!
 Slick-theme.css
 Version: 1.8.0
@@ -7823,7 +7823,7 @@ Issues: http://github.com/kenwheeler/slick/issues
 
 **11.** Copy and paste the following code inside the 'theme.liquid' file on the line 19 in your code editor
 
-```
+```js {linenos=table}
 {{ 'slick.css' | asset_url | stylesheet_tag }}
 {{ 'slick-theme.css' | asset_url | stylesheet_tag }}
 ```
@@ -7832,7 +7832,7 @@ Issues: http://github.com/kenwheeler/slick/issues
 
 **13.** After you create the new file, Delete all what inside it then copy and paste the following code and hit save
 
-```
+```html {linenos=table}
 <style>
   .slick-dots li button:before,
   .slick-dots li a:before {

@@ -14,19 +14,17 @@ By default, Shopify themes will display a blog post author based on staff admin 
 4. On the left bar, search for a folder called _Sections_ then find a file called "article-template.liquid".
 5. Inside the "article-template.liquid" file replace the following code
 
-```
+```html {linenos=table}
 {% if article.metafields.author.name %}
-   <span class="meta-sep">&#8226;</span>
-   {{ article.metafields.author.name }}
-{% else %}
-   <span class="meta-sep">&#8226;</span>
-   {{ article.author }}
-{% endif %}
+<span class="meta-sep">&#8226;</span>
+{{ article.metafields.author.name }} {% else %}
+<span class="meta-sep">&#8226;</span>
+{{ article.author }} {% endif %}
 ```
 
 with the one is highlighted below. That highlighted code is between line 25-26 in your code editor
 
-```js {2-3}
+```js {linenos=table,hl_lines=["2-3"],linenostart=1}
 {% if section.settings.article_author_enable %}
    <span class="meta-sep">&#8226;</span>
    {{ article.author }}
@@ -37,7 +35,7 @@ with the one is highlighted below. That highlighted code is between line 25-26 i
 
 **7.** Inside the "blog-template.liquid" file replace the following code
 
-```
+```html {linenos=table}
 {% if article.metafields.author.name %}
    <span class="meta-sep">&#8226;</span>
    {{ article.metafields.author.name }}
@@ -49,7 +47,7 @@ with the one is highlighted below. That highlighted code is between line 25-26 i
 
 with the one is highlighted below. That highlighted code is between line 27-28 in your code editor
 
-```js {2-3}
+```js {linenos=table,hl_lines=["2-3"],linenostart=1}
 {% if section.settings.blog_author_enable %}
    <span class="meta-sep">&#8226;</span>
    {{ article.author }}

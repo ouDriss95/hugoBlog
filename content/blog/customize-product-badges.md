@@ -13,7 +13,7 @@ There are many ways to attach visitor’s attention to a product. One of the mos
 3. Find the theme that called _Copy of Minimal_ then click **Actions** > **Edit Code**.
 4. On the left bar, search for a folder called _Assets_ then add the following code inside the "theme.scss.liquid" file
 
-```css
+```css {linenos=table}
 .d-flex-important {
   display: flex !important;
   flex-direction: column !important;
@@ -54,7 +54,7 @@ There are many ways to attach visitor’s attention to a product. One of the mos
 
 **6.** Inside the “product-grid-item.liquid” file, replace the following code
 
-```js
+```js {linenos=table}
 {% comment %}
    Custom
    Code
@@ -146,7 +146,7 @@ There are many ways to attach visitor’s attention to a product. One of the mos
 
 **7.** with the one is highlighted below. That highlighted code is between line 26-68 in your code editor
 
-```js {3-45}
+```js {linenos=table,hl_lines=["3-45"],linenostart=1}
 <div class="{% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}">
   <a href="{{ featured.url | within: collection }}" class="grid-link{% if section.settings.center_grid_link %} text-center{% endif %}">
     <span class="grid-link__image grid-link__image--loading{% if section.settings.show_sold_out_circle %} grid-link__image-sold-out{% endif %} grid-link__image--product" data-image-wrapper>
@@ -229,7 +229,7 @@ There are many ways to attach visitor’s attention to a product. One of the mos
 
 **9.** Copy and paste the following code inside the “settings_schema.json” file. Don't forget "Comma" at the end when you paste the code!
 
-```js
+```js {linenos=table}
 {
   "name": "Products Badges",
   "settings": [
