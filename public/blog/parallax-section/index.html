@@ -1,0 +1,499 @@
+<!doctype html><html lang=en itemscope itemtype=http://schema.org/WebPage><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=icon href=/favicon.svg>
+<title>
+How to add the Parallax section in your Shopify | Doudmine
+</title>
+<link rel=canonical href=https://www.doudmine.com/blog/parallax-section/>
+<meta name=description content="You will learn how to add a section with a parallax effect to boost the visual experience of your home page. ">
+<meta name=author content="Driss Oudmine">
+<meta name=generator content="Hugo 0.92.1"><link rel=stylesheet href="https://www.doudmine.com/css/styles.min.0f0bd889f6f5eef983d4b4c9815f616c10d040370cc3ba52c8735a39f9d985b1.css" integrity="sha256-DwvYifb17vmD1LTJgV9hbBDQQDcMw7pSyHNaOfnZhbE="><link rel=stylesheet href="https://www.doudmine.com/css/clipboard.min.e16e6f1a5d94fccee46cf4528fc8329c54122116bdbb5ad7bd86e89f908e133b.css" integrity="sha256-4W5vGl2U/M7kbPRSj8gynFQSIRa9u1rXvYbon5COEzs=">
+<meta property="og:title" content="How to add the Parallax section in your Shopify">
+<meta property="og:description" content="You will learn how to add a section with a parallax effect to boost the visual experience of your home page.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.doudmine.com/blog/parallax-section/"><meta property="article:section" content="blog">
+<meta property="article:published_time" content="2020-10-21T00:00:00+00:00">
+<meta property="article:modified_time" content="2020-10-21T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="How to add the Parallax section in your Shopify">
+<meta name=twitter:description content="You will learn how to add a section with a parallax effect to boost the visual experience of your home page.">
+<meta itemprop=name content="How to add the Parallax section in your Shopify">
+<meta itemprop=description content="You will learn how to add a section with a parallax effect to boost the visual experience of your home page."><meta itemprop=datePublished content="2020-10-21T00:00:00+00:00">
+<meta itemprop=dateModified content="2020-10-21T00:00:00+00:00">
+<meta itemprop=wordCount content="770">
+<meta itemprop=keywords content>
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><style>.dayNight div{border-radius:50%;width:24px;height:24px;position:relative;box-shadow:inset 10px 4px #5C6DA9;transform:scale(1)rotate(-65deg);transition:box-shadow .5s ease 0s,transform .4s ease .1s,opacity .08s ease .06s;opacity:.5}.toggle-dark-mode:hover .dayNight div{opacity:1}.dayNight div:before{content:"";width:inherit;height:inherit;border-radius:inherit;position:absolute;left:0;top:0;transition:background .3s ease}.dayNight div:after{content:"";width:5px;height:5px;border-radius:50%;margin:-2px 0 0 -2px;position:absolute;top:50%;left:50%;box-shadow:0 -18px #fff,0 18px #fff,18px 0 #fff,-18px 0 #fff,10px 10px #fff,-10px 10px #fff,10px -10px #fff,-10px -10px #fff;transform:scale(0);transition:all .3s ease}.dayNight div.checked{box-shadow:inset 32px -32px #000;transform:scale(.5)rotate(0);transition:transform .3s ease .1s,box-shadow .2s ease 0s,opacity .08s ease .06s}.dayNight div.checked:before{background:#fff;transition:background .3s ease .1s}.dayNight div.checked:after{transform:scale(1.5);transition:transform .5s ease .15s}</style>
+<header class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+<a href=https://www.doudmine.com/ class="capitalize font-extrabold text-2xl"><svg class="header__logo" xmlns="http://www.w3.org/2000/svg" width="29.82" height="45" viewBox="0 0 23.608 35.63"><g data-name="Group 1" transform="translate(-641.977 -275.336)"><path data-name="Rectangle 1" d="m641.977 310.964.075-35.628 2 .004-.075 35.628z"/><rect data-name="Rectangle 2" width="8.6" height="8.6" rx="4.3" transform="translate(655.728 294.57)" fill="#a3a3a2"/><path data-name="Path 13" d="M653.201 298.87a6.821 6.821.0 0112.276-4.1 13.189 13.189.0 00.109-1.7 13.99 13.99.0 00-13.995-13.986h-3.38v27.987h3.38a13.953 13.953.0 006.537-1.634 6.842 6.842.0 01-4.927-6.567z"/></g></svg>
+</a>
+<ul class="flex items-center gap-4 lg:gap-6">
+<li><a href=/blog>Blog</a></li>
+<li><a href=/contact>Contact</a></li>
+<li class="grid place-items-center">
+<span class="open-search inline-block cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+</span>
+</li>
+<li class="cursor-pointer toggle-dark-mode grid place-items-center">
+<span class="inline-block dayNight">
+<div class=dayNight__icon></div>
+</span>
+</li>
+</ul>
+</header><main class=flex-1>
+<div class="relative max-w-5xl mx-auto px-4">
+<img src=/parallax.jpg class="rounded-lg shadow-sm w-full object-contain">
+<div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+October 21, 2020
+</div>
+</div>
+<article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+<h1 class="text-2xl font-bold mb-2">How to add the Parallax section in your Shopify</h1>
+<h5 class="text-sm flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="5" width="16" height="16" rx="2"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="4" y1="11" x2="20" y2="11"/><rect x="8" y="15" width="2" height="2"/></svg>
+Posted on
+October 21, 2020
+&nbsp;&bull;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+4&nbsp;minutes
+&nbsp;&bull;<svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 19a9 9 0 019 0 9 9 0 019 0"/><path d="M3 6a9 9 0 019 0 9 9 0 019 0"/><line x1="3" y1="6" x2="3" y2="19"/><line x1="12" y1="6" x2="12" y2="19"/><line x1="21" y1="6" x2="21" y2="19"/></svg>
+770&nbsp;words
+</h5>
+<p>In this tutorial article we will be adding a parallax section with fixed scrolling using HTML and CSS and LIQUID. You will see that when you scroll the image inside the section will stay in place, so let me show you how to add it to your Shopify store.</p>
+<ol>
+<li>From your Shopify admin, go to <strong>Online Store</strong> > <strong>Themes</strong>.</li>
+<li>Find the Minimal theme, and then click <strong>Actions</strong> > <strong>Duplicate</strong>.</li>
+<li>Find the theme that called <em>Copy of Minimal</em> then click <strong>Actions</strong> > <strong>Edit Code</strong>.</li>
+<li>On the left bar, search for a folder called <em>Assets</em> then add the following code inside the &ldquo;theme.scss.liquid&rdquo; file</li>
+</ol>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 32
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 33
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 34
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 35
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 36
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 37
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 38
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 39
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 40
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 41
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 42
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 43
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 44
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 45
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 46
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 47
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 48
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 49
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 50
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 51
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 52
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 53
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 54
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 55
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 56
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 57
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 58
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 59
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 60
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 61
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 62
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 63
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 64
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 65
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 66
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 67
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 68
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 69
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 70
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 71
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 72
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 73
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 74
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 75
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 76
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 77
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 78
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 79
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 80
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 81
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 82
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 83
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 84
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 85
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 86
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 87
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 88
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 89
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 90
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 91
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 92
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 93
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 94
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 95
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 96
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 97
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 98
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 99
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">100
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">101
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">102
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">103
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">104
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">105
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">106
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">107
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">108
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">109
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">110
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">111
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">112
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">113
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">114
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">115
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">116
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">117
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">118
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">119
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">120
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=color:#f92672>//</span> <span style=color:#f92672>Parallax</span> <span style=color:#f92672>Featured</span> <span style=color:#f92672>Product</span> <span style=color:#f92672>Style</span>
+.<span style=color:#a6e22e>featured</span> {
+  <span style=color:#66d9ef>position</span>: <span style=color:#66d9ef>relative</span> <span style=color:#75715e>!important</span>;
+  <span style=color:#66d9ef>background-size</span>: <span style=color:#66d9ef>cover</span> <span style=color:#75715e>!important</span>;
+  <span style=color:#66d9ef>background-position</span>: <span style=color:#66d9ef>center</span> <span style=color:#75715e>!important</span>;
+  <span style=color:#66d9ef>background-repeat</span>: <span style=color:#66d9ef>no-repeat</span> <span style=color:#75715e>!important</span>;
+  <span style=color:#66d9ef>background-attachment</span>: <span style=color:#66d9ef>fixed</span> <span style=color:#75715e>!important</span>;
+  <span style=color:#66d9ef>height</span>: <span style=color:#ae81ff>400</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>color</span>: <span style=color:#ae81ff>#fff</span>;
+  <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>18</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>1.125</span><span style=color:#66d9ef>rem</span>;
+  <span style=color:#66d9ef>overflow</span>: <span style=color:#66d9ef>hidden</span>;
+}
+
+.<span style=color:#a6e22e>featured</span> <span style=color:#f92672>h3</span> {
+  <span style=color:#66d9ef>color</span>: <span style=color:#ae81ff>#fff</span>;
+  <span style=color:#66d9ef>font-weight</span>: <span style=color:#ae81ff>900</span>;
+  <span style=color:#66d9ef>text-transform</span>: <span style=color:#66d9ef>uppercase</span>;
+  <span style=color:#66d9ef>line-height</span>: <span style=color:#ae81ff>1</span>;
+  <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>36</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>2.25</span><span style=color:#66d9ef>rem</span>;
+}
+.<span style=color:#a6e22e>featured</span> .<span style=color:#a6e22e>price_box</span> {
+  <span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>inline-block</span>;
+  <span style=color:#66d9ef>margin-right</span>: <span style=color:#ae81ff>15</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>float</span>: <span style=color:#66d9ef>left</span>;
+}
+.<span style=color:#a6e22e>featured</span> .<span style=color:#a6e22e>price_box</span> .<span style=color:#a6e22e>new_price</span> {
+  <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>2</span><span style=color:#66d9ef>rem</span>;
+  <span style=color:#66d9ef>color</span>: <span style=color:#ae81ff>#fff</span>;
+}
+.<span style=color:#a6e22e>featured</span> .<span style=color:#a6e22e>price_box</span> .<span style=color:#a6e22e>old_price</span> {
+  <span style=color:#66d9ef>color</span>: <span style=color:#ae81ff>#999</span>;
+  <span style=color:#66d9ef>text-decoration</span>: <span style=color:#66d9ef>line-through</span>;
+  <span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>inline-block</span>;
+  <span style=color:#66d9ef>white-space</span>: <span style=color:#66d9ef>nowrap</span>;
+  <span style=color:#66d9ef>font-weight</span>: <span style=color:#ae81ff>500</span>;
+  <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>16</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>1</span><span style=color:#66d9ef>rem</span>;
+  <span style=color:#66d9ef>margin-left</span>: <span style=color:#ae81ff>5</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>1.125</span><span style=color:#66d9ef>rem</span>;
+}
+.<span style=color:#a6e22e>opacity-mask</span> {
+  <span style=color:#66d9ef>width</span>: <span style=color:#ae81ff>100</span><span style=color:#66d9ef>%</span>;
+  <span style=color:#66d9ef>height</span>: <span style=color:#ae81ff>100</span><span style=color:#66d9ef>%</span>;
+  <span style=color:#66d9ef>position</span>: <span style=color:#66d9ef>absolute</span>;
+  <span style=color:#66d9ef>left</span>: <span style=color:#ae81ff>0</span>;
+  <span style=color:#66d9ef>top</span>: <span style=color:#ae81ff>0</span>;
+  <span style=color:#66d9ef>z-index</span>: <span style=color:#ae81ff>2</span>;
+  <span style=color:#66d9ef>background-color</span>: rgba(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0.5</span>);
+}
+.<span style=color:#a6e22e>align-items-center</span> {
+  <span style=color:#66d9ef>-ms-</span>flex-align: <span style=color:#66d9ef>center</span> <span style=color:#75715e>!important</span>;
+  <span style=color:#66d9ef>align-items</span>: <span style=color:#66d9ef>center</span> <span style=color:#75715e>!important</span>;
+}
+.<span style=color:#a6e22e>d-flex</span> {
+  <span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>-ms-</span>flexbox <span style=color:#75715e>!important</span>;
+  <span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>flex</span> <span style=color:#75715e>!important</span>;
+}
+.<span style=color:#a6e22e>margin_60</span> {
+  <span style=color:#66d9ef>padding-top</span>: <span style=color:#ae81ff>60</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>padding-bottom</span>: <span style=color:#ae81ff>60</span><span style=color:#66d9ef>px</span>;
+}
+.<span style=color:#a6e22e>container</span> {
+  <span style=color:#66d9ef>width</span>: <span style=color:#ae81ff>100</span><span style=color:#66d9ef>%</span>;
+  <span style=color:#66d9ef>padding-right</span>: <span style=color:#ae81ff>15</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>padding-left</span>: <span style=color:#ae81ff>40</span><span style=color:#66d9ef>px</span>;
+  <span style=color:#66d9ef>margin-right</span>: <span style=color:#66d9ef>auto</span>;
+  <span style=color:#66d9ef>margin-left</span>: <span style=color:#66d9ef>auto</span>;
+}
+.<span style=color:#a6e22e>row</span> {
+  <span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>-ms-</span>flexbox;
+  <span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>flex</span>;
+  <span style=color:#66d9ef>-ms-</span><span style=color:#66d9ef>flex-wrap</span>: <span style=color:#66d9ef>wrap</span>;
+  <span style=color:#66d9ef>flex-wrap</span>: <span style=color:#66d9ef>wrap</span>;
+}
+.<span style=color:#a6e22e>column-one</span> {
+  <span style=color:#66d9ef>-ms-</span><span style=color:#66d9ef>flex</span>: <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>50</span><span style=color:#66d9ef>%</span>;
+  <span style=color:#66d9ef>flex</span>: <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>50</span><span style=color:#66d9ef>%</span>;
+  <span style=color:#66d9ef>max-width</span>: <span style=color:#ae81ff>50</span><span style=color:#66d9ef>%</span>;
+}
+
+@<span style=color:#66d9ef>media</span> <span style=color:#f92672>(</span><span style=color:#f92672>max-width</span><span style=color:#f92672>:</span> <span style=color:#f92672>767px</span><span style=color:#f92672>)</span> {
+  .<span style=color:#a6e22e>featured</span> {
+    <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>16</span><span style=color:#66d9ef>px</span>;
+  }
+  .<span style=color:#a6e22e>featured</span> <span style=color:#f92672>h3</span> {
+    <span style=color:#66d9ef>color</span>: <span style=color:#ae81ff>#fff</span>;
+    <span style=color:#66d9ef>font-weight</span>: <span style=color:#ae81ff>900</span>;
+    <span style=color:#66d9ef>text-transform</span>: <span style=color:#66d9ef>uppercase</span>;
+    <span style=color:#66d9ef>line-height</span>: <span style=color:#ae81ff>1</span>;
+    <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>28</span><span style=color:#66d9ef>px</span>;
+  }
+  .<span style=color:#a6e22e>featured</span> .<span style=color:#a6e22e>price_box</span> .<span style=color:#a6e22e>new_price</span> {
+    <span style=color:#66d9ef>font-size</span>: <span style=color:#ae81ff>20</span><span style=color:#66d9ef>px</span>;
+    <span style=color:#66d9ef>color</span>: <span style=color:#ae81ff>#fff</span>;
+  }
+  .<span style=color:#a6e22e>margin_60</span> {
+    <span style=color:#66d9ef>padding-top</span>: <span style=color:#ae81ff>30</span><span style=color:#66d9ef>px</span>;
+    <span style=color:#66d9ef>padding-bottom</span>: <span style=color:#ae81ff>30</span><span style=color:#66d9ef>px</span>;
+  }
+  .<span style=color:#a6e22e>container</span> {
+    <span style=color:#66d9ef>width</span>: <span style=color:#ae81ff>100</span><span style=color:#66d9ef>%</span>;
+    <span style=color:#66d9ef>padding-right</span>: <span style=color:#ae81ff>15</span><span style=color:#66d9ef>px</span>;
+    <span style=color:#66d9ef>padding-left</span>: <span style=color:#ae81ff>15</span><span style=color:#66d9ef>px</span>;
+    <span style=color:#66d9ef>margin-right</span>: <span style=color:#66d9ef>auto</span>;
+    <span style=color:#66d9ef>margin-left</span>: <span style=color:#66d9ef>auto</span>;
+  }
+  .<span style=color:#a6e22e>row</span> {
+    <span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>-ms-</span>flexbox;
+    <span style=color:#66d9ef>display</span>: <span style=color:#66d9ef>flex</span>;
+    <span style=color:#66d9ef>-ms-</span><span style=color:#66d9ef>flex-wrap</span>: <span style=color:#66d9ef>wrap</span>;
+    <span style=color:#66d9ef>flex-wrap</span>: <span style=color:#66d9ef>wrap</span>;
+  }
+  .<span style=color:#a6e22e>column-one</span> {
+    <span style=color:#66d9ef>-ms-</span><span style=color:#66d9ef>flex</span>: <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>50</span><span style=color:#66d9ef>%</span>;
+    <span style=color:#66d9ef>flex</span>: <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>0</span> <span style=color:#ae81ff>90</span><span style=color:#66d9ef>%</span>;
+    <span style=color:#66d9ef>max-width</span>: <span style=color:#ae81ff>100</span><span style=color:#66d9ef>%</span>;
+  }
+}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>5.</strong> Again on the left bar, search for a folder called <em>Sections</em> then create a new file called &ldquo;parallax-featured-product.liquid&rdquo;</p>
+<p><strong>6.</strong> Copy and paste the following code inside the &ldquo;parallax-featured-product.liquid&rdquo; file</p>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">39
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">40
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">41
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">42
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">43
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">44
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">45
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">46
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">47
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">48
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">49
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">50
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">51
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">52
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">53
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">54
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">55
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">56
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">57
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">58
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">59
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">60
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">61
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">62
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js> {<span style=color:#f92672>%</span> <span style=color:#a6e22e>comment</span> <span style=color:#f92672>%</span>}
+   <span style=color:#a6e22e>custom</span>
+   <span style=color:#a6e22e>code</span> <span style=color:#a6e22e>by</span>
+   <span style=color:#a6e22e>https</span><span style=color:#f92672>:</span><span style=color:#75715e>//www.doudmine.com/
+</span><span style=color:#75715e></span>{<span style=color:#f92672>%</span> <span style=color:#a6e22e>endcomment</span> <span style=color:#f92672>%</span>}
+{<span style=color:#f92672>%-</span> <span style=color:#a6e22e>assign</span> <span style=color:#a6e22e>featured_product</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>all_products</span>[<span style=color:#a6e22e>section</span>.<span style=color:#a6e22e>settings</span>.<span style=color:#a6e22e>featured_product_handle</span>] <span style=color:#f92672>-%</span>}
+<span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;featured lazy&#34;</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;background: url({% if section.settings.img_product %}{{ section.settings.img_product | img_url: &#39;master&#39; }}{% else %}https://via.placeholder.com/1200x800{% endif %}) 50% 70%;&#34;</span><span style=color:#f92672>&gt;</span>
+   <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;opacity-mask d-flex align-items-center&#34;</span><span style=color:#f92672>&gt;</span>
+      <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container margin_60&#34;</span><span style=color:#f92672>&gt;</span>
+         <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row justify-content-center justify-content-md-start&#34;</span><span style=color:#f92672>&gt;</span>
+            <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;column-one&#34;</span><span style=color:#f92672>&gt;</span>
+               <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>h3</span><span style=color:#f92672>&gt;</span>{{ <span style=color:#a6e22e>featured_product</span>.<span style=color:#a6e22e>title</span> }}<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/h3&gt;</span>
+               <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>p</span><span style=color:#f92672>&gt;</span>{{ <span style=color:#a6e22e>featured_product</span>.<span style=color:#a6e22e>description</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>truncate</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>100</span> }}<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/p&gt;</span>
+               <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;feat_text_block&#34;</span><span style=color:#f92672>&gt;</span>
+                  <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>div</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;price_box&#34;</span><span style=color:#f92672>&gt;</span>
+                     <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>span</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;new_price&#34;</span><span style=color:#f92672>&gt;</span>{{ <span style=color:#a6e22e>featured_product</span>.<span style=color:#a6e22e>variants</span>.<span style=color:#a6e22e>first</span>.<span style=color:#a6e22e>price</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>money</span> }}<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/span&gt;</span>
+                     {<span style=color:#f92672>%-</span> <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>featured_product</span>.<span style=color:#a6e22e>variants</span>.<span style=color:#a6e22e>first</span>.<span style=color:#a6e22e>compare_at_price</span> <span style=color:#f92672>&gt;</span> <span style=color:#a6e22e>featured_product</span>.<span style=color:#a6e22e>variants</span>.<span style=color:#a6e22e>first</span>.<span style=color:#a6e22e>price</span> <span style=color:#f92672>-%</span>}
+                     <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>span</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;old_price&#34;</span><span style=color:#f92672>&gt;</span>{{ <span style=color:#a6e22e>featured_product</span>.<span style=color:#a6e22e>variants</span>.<span style=color:#a6e22e>first</span>.<span style=color:#a6e22e>compare_at_price</span> <span style=color:#f92672>|</span> <span style=color:#a6e22e>money</span> }}<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/span&gt;</span>
+                     {<span style=color:#f92672>%-</span> <span style=color:#a6e22e>endif</span> <span style=color:#f92672>-%</span>}
+                  <span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+                  <span style=color:#f92672>&lt;</span><span style=color:#a6e22e>a</span> <span style=color:#66d9ef>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;btn&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{{ featured_product.url }}&#34;</span> <span style=color:#a6e22e>role</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;button&#34;</span><span style=color:#f92672>&gt;</span>{{ <span style=color:#a6e22e>section</span>.<span style=color:#a6e22e>settings</span>.<span style=color:#a6e22e>txt_button</span> }}<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/a&gt;</span>
+               <span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+            <span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+         <span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+      <span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+   <span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+<span style=color:#f92672>&lt;</span><span style=color:#960050;background-color:#1e0010>/div&gt;</span>
+<span style=color:#75715e>&lt;!--</span> <span style=color:#960050;background-color:#1e0010>/featured --&gt;</span>
+
+{<span style=color:#f92672>%</span> <span style=color:#a6e22e>schema</span> <span style=color:#f92672>%</span>}
+{
+  <span style=color:#e6db74>&#34;name&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Featured Product Parallax&#34;</span>,
+  <span style=color:#e6db74>&#34;settings&#34;</span><span style=color:#f92672>:</span> [
+    {
+      <span style=color:#e6db74>&#34;type&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;header&#34;</span>,
+      <span style=color:#e6db74>&#34;content&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Parallax featured product&#34;</span>
+    },
+    {
+      <span style=color:#e6db74>&#34;type&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;image_picker&#34;</span>,
+      <span style=color:#e6db74>&#34;id&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;img_product&#34;</span>,
+      <span style=color:#e6db74>&#34;label&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Section image&#34;</span>
+    },
+    {
+      <span style=color:#e6db74>&#34;type&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;text&#34;</span>,
+      <span style=color:#e6db74>&#34;id&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;txt_button&#34;</span>,
+      <span style=color:#e6db74>&#34;label&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Button text&#34;</span>,
+      <span style=color:#e6db74>&#34;default&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;View more&#34;</span>
+    },
+    {
+      <span style=color:#e6db74>&#34;type&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;product&#34;</span>,
+      <span style=color:#e6db74>&#34;id&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;featured_product_handle&#34;</span>,
+      <span style=color:#e6db74>&#34;label&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Select product&#34;</span>
+    }
+  ],
+  <span style=color:#e6db74>&#34;presets&#34;</span><span style=color:#f92672>:</span> [
+    {
+      <span style=color:#e6db74>&#34;name&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Featured Product Parallax&#34;</span>,
+      <span style=color:#e6db74>&#34;category&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;Products&#34;</span>
+    }
+  ]
+}
+{<span style=color:#f92672>%</span> <span style=color:#a6e22e>endschema</span> <span style=color:#f92672>%</span>}
+</code></pre></td></tr></table>
+</div>
+</div><p>That&rsquo;s it now, your Section is ready to showcase your featured product. I hope this article is helpful for you!</p>
+<p>Hey, if you have any issues implementing the Parallax section into your Shopify Store. DM me on <a href=https://www.instagram.com/doudmine>Instagram</a> so I can help</p>
+</article><style>.social{display:flex;flex-direction:column}.social__content{width:inherit;text-align:center;margin-bottom:25px}.social__icons{display:flex;justify-content:center}@media(min-width:640px){.social{flex-direction:row;justify-content:space-between}.social__content{text-align:unset;margin-bottom:0}.social__icons{justify-content:flex-end}}</style>
+<div class="mt-24 bg-blue-100 dark:bg-gray-900">
+<div class="p-6 mx-auto container social">
+<div class=social__content>
+<div class="text-2xl font-bold mb-2">Follow me</div>
+<p class=opacity-60>Where I share tips & tricks about Shopify in general</p>
+</div>
+<ul class=social__icons>
+<li>
+<a href=https://www.instagram.com/doudmine/ target=_blank rel=noopener aria-label=Instagram class="p-2 inline-block rounded-full border border-transparent text-gray-800 hover:text-gray-500 cursor-pointer transition-colors dark:text-gray-400 dark:hover:text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28" viewBox="0 0 32 32" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><title>instagram</title><path d="M16 2.881c4.275.0 4.781.019 6.462.094 1.563.069 2.406.331 2.969.55.744.288 1.281.638 1.837 1.194.563.563.906 1.094 1.2 1.838.219.563.481 1.412.55 2.969.075 1.688.094 2.194.094 6.463s-.019 4.781-.094 6.463c-.069 1.563-.331 2.406-.55 2.969-.288.744-.637 1.281-1.194 1.837-.563.563-1.094.906-1.837 1.2-.563.219-1.413.481-2.969.55-1.688.075-2.194.094-6.463.094s-4.781-.019-6.463-.094c-1.563-.069-2.406-.331-2.969-.55-.744-.288-1.281-.637-1.838-1.194-.563-.563-.906-1.094-1.2-1.837-.219-.563-.481-1.413-.55-2.969-.075-1.688-.094-2.194-.094-6.463s.019-4.781.094-6.463c.069-1.563.331-2.406.55-2.969.288-.744.638-1.281 1.194-1.838.563-.563 1.094-.906 1.838-1.2.563-.219 1.412-.481 2.969-.55 1.681-.075 2.188-.094 6.463-.094zM16 0c-4.344.0-4.887.019-6.594.094-1.7.075-2.869.35-3.881.744-1.056.412-1.95.956-2.837 1.85-.894.888-1.438 1.781-1.85 2.831-.394 1.019-.669 2.181-.744 3.881-.075 1.713-.094 2.256-.094 6.6s.019 4.887.094 6.594c.075 1.7.35 2.869.744 3.881.413 1.056.956 1.95 1.85 2.837.887.887 1.781 1.438 2.831 1.844 1.019.394 2.181.669 3.881.744 1.706.075 2.25.094 6.594.094s4.888-.019 6.594-.094c1.7-.075 2.869-.35 3.881-.744 1.05-.406 1.944-.956 2.831-1.844s1.438-1.781 1.844-2.831c.394-1.019.669-2.181.744-3.881.075-1.706.094-2.25.094-6.594s-.019-4.887-.094-6.594c-.075-1.7-.35-2.869-.744-3.881-.394-1.063-.938-1.956-1.831-2.844-.887-.887-1.781-1.438-2.831-1.844-1.019-.394-2.181-.669-3.881-.744-1.712-.081-2.256-.1-6.6-.1v0z"/><path d="M16 7.781c-4.537.0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zm0 13.55c-2.944.0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331 5.331 2.387 5.331 5.331-2.387 5.331-5.331 5.331z"/><path d="M26.462 7.456c0 1.06-.859 1.919-1.919 1.919s-1.919-.859-1.919-1.919.859-1.919 1.919-1.919 1.919.859 1.919 1.919z"/></svg>
+</a>
+</li>
+<li>
+<a href=https://www.youtube.com/channel/UCYF73P2A2NdVr6c9aONH22w target=_blank rel=noopener aria-label=YouTube class="p-2 mx-2 inline-block rounded-full text-gray-800 hover:text-gray-500 cursor-pointer transition-colors dark:text-gray-400 dark:hover:text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="32" height="30" viewBox="0 0 32 32" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><title>youtube</title><path d="M31.681 9.6s-.313-2.206-1.275-3.175C29.187 5.15 27.825 5.144 27.2 5.069c-4.475-.325-11.194-.325-11.194-.325h-.012s-6.719.0-11.194.325c-.625.075-1.987.081-3.206 1.356-.963.969-1.269 3.175-1.269 3.175s-.319 2.588-.319 5.181v2.425c0 2.587.319 5.181.319 5.181s.313 2.206 1.269 3.175c1.219 1.275 2.819 1.231 3.531 1.369 2.563.244 10.881.319 10.881.319s6.725-.012 11.2-.331c.625-.075 1.988-.081 3.206-1.356.962-.969 1.275-3.175 1.275-3.175s.319-2.587.319-5.181v-2.425c-.006-2.588-.325-5.181-.325-5.181zM12.694 20.15v-8.994l8.644 4.513-8.644 4.481z"/></svg>
+</a>
+</li>
+<li>
+<a href=https://www.pinterest.com/doudmine target=_blank rel=noopener aria-label=pinterest class="p-2 inline-block rounded-full border border-transparent text-gray-800 hover:text-gray-500 cursor-pointer transition-colors dark:text-gray-400 dark:hover:text-gray-300"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28" viewBox="0 0 32 32" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><title>pinterest2</title><path d="M16 0C7.175.0.0 7.175.0 16s7.175 16 16 16 16-7.175 16-16S24.825.0 16 0zm0 29.863c-1.431.0-2.806-.219-4.106-.619.563-.919 1.412-2.431 1.725-3.631.169-.65.863-3.294.863-3.294.45.863 1.775 1.594 3.175 1.594 4.181.0 7.194-3.844 7.194-8.625.0-4.581-3.738-8.006-8.544-8.006-5.981.0-9.156 4.019-9.156 8.387.0 2.031 1.081 4.563 2.813 5.369.262.125.4.069.463-.188.044-.194.281-1.131.387-1.575.031-.137.019-.262-.094-.4-.575-.694-1.031-1.975-1.031-3.162.0-3.056 2.313-6.019 6.256-6.019 3.406.0 5.788 2.319 5.788 5.637.0 3.75-1.894 6.35-4.356 6.35-1.363.0-2.381-1.125-2.05-2.506.394-1.65 1.15-3.425 1.15-4.613.0-1.063-.569-1.95-1.756-1.95-1.394.0-2.506 1.438-2.506 3.369.0 1.225.412 2.056.412 2.056s-1.375 5.806-1.625 6.887c-.281 1.2-.169 2.881-.05 3.975-5.156-2.012-8.813-7.025-8.813-12.9.0-7.656 6.206-13.863 13.862-13.863s13.863 6.206 13.863 13.863c0 7.656-6.206 13.863-13.863 13.863z"/></svg>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</main><footer class="container p-6 mx-auto flex justify-between items-center">
+<span class="text-sm font-light">
+Copyright © 2022 - Doudmine · All rights reserved
+</span>
+<span onclick="window.scrollTo({top:0,behavior:'smooth'})" class="p-1 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 15l-6-6-6 6h12"/></svg>
+</span>
+</footer>
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+<div class="container max-w-3xl mx-auto p-12">
+<div class=relative>
+<div class="my-4 text-center text-2xl font-bold">Search</div>
+<span class="p-2 absolute right-0 top-0 cursor-pointer close-search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</span>
+</div>
+<input type=search class="py-2 px-3 w-full dark:text-black border dark:border-transparent" placeholder="Enter search query">
+<div class="search-results text-lg font-medium my-4 hidden">Results</div>
+<ul class="search-list my-2">
+</ul>
+<div class="no-results text-center my-8 hidden">
+<div class="text-xl font-semibold mb-2">No results found</div>
+<p class="font-light text-sm">Try adjusting your search query</p>
+</div>
+</div>
+</div>
+<script src=https://www.doudmine.com/js/scripts.min.js></script>
+<script src=https://www.doudmine.com/js/clipboard.js></script>
+<script>const darkmode=document.querySelector('.toggle-dark-mode'),darkIcon=document.querySelector('.dayNight__icon');function toggleDarkMode(){document.documentElement.classList.contains('dark')?(document.documentElement.classList.remove('dark'),localStorage.setItem('darkmode','light'),darkIcon.classList.remove('checked')):(document.documentElement.classList.add('dark'),localStorage.setItem('darkmode','dark'),darkIcon.classList.add('checked'))}darkmode&&darkmode.addEventListener('click',toggleDarkMode);const isDark=localStorage.getItem('darkmode');isDark&&isDark==='dark'&&toggleDarkMode()</script>
+</body>
+</html>
