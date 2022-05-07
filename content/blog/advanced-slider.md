@@ -34,7 +34,6 @@ Product Sliders allows showing all suggested products friendly that match to cus
 **7.** After you created the file, delete what's inside it then paste the following code inside it
 
 ```js {linenos=table}
-
 <style>
    .header-section {
       display: flex;

@@ -153,7 +153,7 @@
           </svg>
           <div>
             <h4>Project Link</h4>
-            {{. | markdownify}}
+            <a href="{{ . | safeURL }}" {{ if strings.HasPrefix . "https" }} target="_blank" rel="noopener"{{ end }}>{{ . | safeHTML }}</a>
           </div>
         </div>
         {{ end }}

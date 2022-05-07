@@ -11,4 +11,4 @@ draft: false
 
 #### Project Details
 
-The development of a simple landing page for practicing Shopify liquid. It is based on a design that I found on dribbble by [Syed Roni](https://dribbble.com/shots/14620662-Curology-Landing-Page-concept), I developed it from scratch using HTML, CSS, JS, GULP and LIQUID.
+The development of a simple landing page for practicing Shopify liquid. It is based on a design that I found on dribbble by <a href="https://dribbble.com/shots/14620662-Curology-Landing-Page-concept" target="_blank">Syed Roni</a>, I developed it from scratch using HTML, CSS, JS, GULP and LIQUID.

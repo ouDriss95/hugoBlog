@@ -47,7 +47,7 @@ DefaultContentLanguageInSubdir = true
 [params.homepage.social]
   # Global params xommon for both languages
   title = "Follow me"
-  subtitle = "Where I share tips & tricks about Shopify in general"
+  subtitle = "Where I share tips & tricks about E-commerce in general"
   
   instagram = "https://www.instagram.com/doudmine/"
   youtube = "https://www.youtube.com/channel/UCYF73P2A2NdVr6c9aONH22w"

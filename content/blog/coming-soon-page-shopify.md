@@ -3,7 +3,7 @@ author: Driss Oudmine
 title: Hype your products with this beautiful coming soon page for Shopify - No app
 description: In this step by step tutorial you will learn how to add a coming soon page to your Shopify store using code.
 date: 2022-05-07
-thumbnail: /coming-soon
+thumbnail: /coming-soon.jpg
 ---
 You start a business or product and plan to launch it on Shopify, you want the interest of potential customers to amplify your reach before opening, then creating a great Shopify coming soon page is one of the best ways to start collecting qualified shoppers and give your business a much-needed boost in the early days of trading. With a sizable list of prospective customers to market to, you’ll have excellent referral potential, more conversions, and more revenue from day one. 
 
@@ -15,6 +15,7 @@ In this article, I'm going to guide you to implement a good looking coming soon 
 3. Find the theme that called _Copy of Dawn_ then click **Actions** > **Edit Code**.
 4. On the left bar, search for a folder called _templates_ then delete a file called "password.json".
 5. After you delete the file "password.json" create a new one called "password.liquid". The difference between the two is the new file has ".liquid" at the end. 
+
 6. Copy and the paste the following code inside the "password.liquid" file:
 ```html {linenos=table}
 {% layout none %}
@@ -688,10 +689,10 @@ In this article, I'm going to guide you to implement a good looking coming soon 
 
       <footer>
         <div class="ss-copyright">
-          <span>© Copyright Imminent 2019</span>
+          <span>&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</span>
           <span
-            >Design by
-            <a href="https://www.styleshout.com/">StyleShout</a></span
+            >Designed by <a href="https://www.styleshout.com/">StyleShout</a> and Converted to shopify by <a href="https://www.doudmine.com/">Doudmine</a>
+          </span
           >
         </div>
 
@@ -5718,4 +5719,4 @@ html.no-csstransitions .intro-content__bottom {
 That's it! With this coming soon page, once the store is ready to launch, you’ll have a sizable list of prospective customers who are interested and ready to buy.
 
 Credits: 
-This beautiful coming soon page was designed by [Styleshout](https://www.styleshout.com/category-template/coming-soon/) and converted to Shopify by Me. You can find a lot of other coming soon pages design on [Styleshout](https://www.styleshout.com/category-template/coming-soon/) website and if you need help with convert those pages to Shopify don't hesitate to contacting me. See you in the next tutorial
+This beautiful coming soon page was designed by <a href="https://www.styleshout.com/category-template/coming-soon/" target="_blank">Styleshout</a> and converted to Shopify by me. You can find a lot of other coming soon pages design on <a href="https://www.styleshout.com/category-template/coming-soon/" target="_blank">Styleshout</a> website and if you need help with converting those pages to Shopify don't hesitate to contact me [here](https://www.doudmine.com/contact/), see you in the next tutorial.
