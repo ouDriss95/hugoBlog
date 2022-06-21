@@ -1,4 +1,4 @@
-baseurl = "https://www.doudmine.com"
+baseurl = "https://doudmine.com/"
 metaDataFormat = "yaml"
 title = "Doudmine"
 theme = "blist"
@@ -14,8 +14,8 @@ DefaultContentLanguageInSubdir = true
     languageName = "English"
     [languages.en.params]
       introTitle = "Hey 👋 I'm Driss OUDMINE"
-      introSubtitle = "Front-end & Shopify theme developer"
-      introParagraph = "Develop functional user interfaces and provide a valuable experience to Shopify store owners."
+      introSubtitle = "Email & Shopify theme developer"
+      introParagraph = "Develop functional user interfaces and provide a valuable experience to Shopify store owners and Email marketer."
       introPhoto = "/picture.jpg"
     [[languages.en.menu.main]]
         name = "Blog"
