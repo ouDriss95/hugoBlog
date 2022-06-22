@@ -3,8 +3,7 @@ author: Driss Oudmine
 title: How to add a custom Shopify Notification Email template - Order Confirmation
 description: Learn how to add a custom email Order confirmation template to your Shopify store
 date: 2022-06-21
-thumbnail: /order-confirmation.jpg
-draft: true
+thumbnail: /order-confirmation.png
 ---
 
 In this tutorial we will be replacing the default email Order confirmation template with a custom one that is modern and unique. Also you will be able to add your logo, colors and images plus a discount code! All this without the need of an app. So let's get started
