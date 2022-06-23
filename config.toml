@@ -3,7 +3,7 @@ metaDataFormat = "yaml"
 title = "Doudmine"
 theme = "blist"
 
-googleAnalytics = ""
+googleAnalytics = "G-C8R80539HW"
 
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
@@ -15,7 +15,7 @@ DefaultContentLanguageInSubdir = true
     [languages.en.params]
       introTitle = "Hey 👋 I'm Driss OUDMINE"
       introSubtitle = "Email & Shopify theme developer"
-      introParagraph = "Develop functional user interfaces and provide a valuable experience to Shopify store owners and Email marketer."
+      introParagraph = "Develop functional user interfaces and provide a valuable experience to Shopify store owners and Email marketers."
       introPhoto = "/picture.jpg"
     [[languages.en.menu.main]]
         name = "Blog"

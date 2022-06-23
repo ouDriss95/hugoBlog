@@ -21,8 +21,6 @@
 
 {{- partial "clipboard-js.html" . -}}
 
-{{ template "_internal/google_analytics_async.html" . }}
-
 {{ if ge (len .Site.Languages) 3 }}
 <script>
   const languageMenuButton = document.querySelector('.language-switcher');

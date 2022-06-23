@@ -1479,6 +1479,8 @@ In this tutorial we will be replacing the default email Order confirmation templ
 </html>
 ```
 3. Upload your logo and 2 image assets in **Settings** > **Files**. One image for banner and other for a Discount offer
-4. Watch the video above to see how you can customize the new Email Order Confirmation template
+4. Watch the video below to see how you can customize the new email Order Confirmation template
+
+{{< youtube KNY8lwaEvo8 >}}
 
 That's it! I hope this tutorial has been helpful and if you need something don't hesitate to [contact me](https://www.doudmine.com/contact/) 
