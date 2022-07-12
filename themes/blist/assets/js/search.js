@@ -168,3 +168,15 @@ function executeSearch(term) {
     last = list.lastChild.firstElementChild; // last result container — used for checking against keyboard up/down location
   }
 }
+
+
+const lightbox = GLightbox();
+
+lightbox.on('open', (target) => {
+  console.log('lightbox opened');
+});
+const galleryTriggerBtn = document.getElementById("galleryTrigger");
+
+galleryTriggerBtn.addEventListener('click', function() {
+  document.getElementById("imageLink").click();
+}); 

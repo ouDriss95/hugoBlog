@@ -1,5 +1,5 @@
 ---
-title: "My portfoio website"
+title: "My portfolio website"
 date: 2022-01-01T12:14:34+06:00
 image: "/images/portfolio/project2.jpg"
 client: "Doudmine"

@@ -66,3 +66,7 @@
   }
 </script>
 {{ end }}
+
+{{ $lightbox := resources.Get "js/lightbox.js" }}
+
+<script src="{{ $lightbox.Permalink }}"></script>
